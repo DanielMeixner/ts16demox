@@ -137,6 +137,12 @@
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ts16corelib\ts16corelib.csproj">
+      <Project>{e6571097-e7b4-4856-909a-9b6a0eeab33e}</Project>
+      <Name>ts16corelib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="..\ts16mobile\ts16mobile.projitems" Label="Shared" Condition="Exists('..\ts16mobile\ts16mobile.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

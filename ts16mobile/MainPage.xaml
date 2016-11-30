@@ -4,8 +4,12 @@
              xmlns:local="clr-namespace:ts16mobile"
              x:Class="ts16mobile.MainPage">
 
+    <StackLayout >
 	<Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
+
+        <ListView x:Name="MyListView"></ListView>
+    </StackLayout>
 
 </ContentPage>
