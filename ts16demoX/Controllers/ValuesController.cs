@@ -22,16 +22,12 @@ namespace ts16demoX.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            // default
-            // return new string[] { "value1", "value2" };
+            return new string[] { "value1", "value2" };
 
-            //works locally            
-            var lines = System.IO.File.ReadAllLines("wwwroot/quotes.txt");
-
-            // works everywhere
+            
             //string webRootPath = hostingEnvironment.WebRootPath;
             //var lines = System.IO.File.ReadAllLines(webRootPath + @"/quotes.txt");
-            return lines;
+            //return lines;
         }
 
         // GET api/values/5
@@ -39,6 +35,11 @@ namespace ts16demoX.Controllers
         public string Get(int id)
         {
             return "value";
+
+            //string webRootPath = hostingEnvironment.WebRootPath;
+            //var lines = System.IO.File.ReadAllLines(webRootPath + @"/quotes.txt");
+            //return new Quote() { Author = "unknown", QuoteText = lines[id] };
+
         }
 
         // POST api/values

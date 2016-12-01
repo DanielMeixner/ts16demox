@@ -10,7 +10,10 @@ namespace ts16mobile
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
+
+        private string myUrl;
+
+        public MainPage()
 		{
 			InitializeComponent();
 		}
@@ -19,11 +22,28 @@ namespace ts16mobile
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            ObservableCollection<string> myItems = new ObservableCollection<string>();
-            myItems.Add("one");
-            myItems.Add("two");
-            myItems.Add("three");
-            MyListView.ItemsSource = myItems;
+            
         }
+
+
+        //private async Task<Quote> GetQuoteFromServerAsync()
+        //{
+        //    HttpClient client = new HttpClient();
+        //    var json = await client.GetStringAsync(myUrl);
+
+        //    Quote q = JsonConvert.DeserializeObject<Quote>(json);
+
+        //    return q;
+        //}
+
+
     }
+
+    public class Quote
+    {
+        public string QuoteText { get; set; }
+        public string Author { get; set; }
+    }
+
+
 }
